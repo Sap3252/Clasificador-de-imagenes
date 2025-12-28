@@ -65,7 +65,7 @@ for i in os.listdir(ruta_train):
 
         train_x.append(resized_image)
 
-        # Añadimos etiquetas simples 0/1 (ajusta según tu dataset)
+        # Etiquetas simples 0/1
         if i.lower().startswith('cat'):
             train_y.append(0)
         else:
