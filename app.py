@@ -122,6 +122,7 @@ models.save_model(model, 'modeloclasif.keras')
 # Cargar modelo y comprobar existencia de la imagen antes de redimensionar
 model = models.load_model('modeloclasif.keras')
 
+# Cambia esta ruta por la imagen que quieras predecir
 my_image_path = 'IMAGENES/test/images.jpg'
 my_image = cv2.imread(my_image_path)
 if my_image is None:
