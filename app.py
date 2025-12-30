@@ -122,7 +122,7 @@ models.save_model(model, 'modeloclasif.keras')
 # Cargar modelo y comprobar existencia de la imagen antes de redimensionar
 model = models.load_model('modeloclasif.keras')
 
-my_image_path = 'IMAGENES/test/12274.jpg'
+my_image_path = 'IMAGENES/test/images.jpg'
 my_image = cv2.imread(my_image_path)
 if my_image is None:
     print(f"Error: no se pudo leer la imagen de predicción: {my_image_path}")
